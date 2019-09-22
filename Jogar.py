@@ -123,11 +123,9 @@ def main():
 
                 #VEZ DO JOGADOR
                 if vez_jogador == True and vez_oponente == False:
-                    print("sexo")
                     print(clique_linha,clique_coluna)
                     print(lista_coordenadas)
                     if not (clique_linha >= 10 or clique_coluna >= 10) and (clique_linha, clique_coluna) in lista_coordenadas:
-                        print("anal")
                         posicao = campo_jogador.matriz[clique_linha][clique_coluna]
                         posicao.click()
                         lista_coordenadas.remove( (clique_linha, clique_coluna) )
@@ -161,7 +159,6 @@ def main():
 
             #VEZ OPONENTE
             if vez_jogador == False and vez_oponente == True:
-                print("vaginal")   
                 #VERIFICA UMA COORDENADA QUE NAO FOI JOGADA
                 while True:
                     linha_oponente = randint(0, 9)
