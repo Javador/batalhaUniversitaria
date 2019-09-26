@@ -10,14 +10,6 @@ class Barco:
         self.imagem = pygame.image.load("imagens" + os.sep + "explosao3.jpg")
 
 
-        """relogio = pygame.time.Clock()
-        self.relogio = relogio
-        self.contador = 16
-        while self.contador >= 1:
-            #self.relogio.tick(10)
-            self.imagem = pygame.image.load("imagens" + os.sep + "explosao" + str(self.contador) + ".jpg")
-            self.contador -= 1"""
-
 class Bloco:
     def __init__(self):
         self.barco = None
@@ -191,4 +183,4 @@ class Mapa:
     def blitar(self, tela):
         for linha in range( len(self.matriz) ):
             for coluna in range( len(self.matriz[0] ) ):
-                tela.blit(self.matriz[linha][coluna].imagem, (self.x + 30 * coluna, self.y + 30 * linha) )
+                tela.blit(self.matriz[linha][coluna].imagem, (self.x + 20 * coluna, self.y + 20 * linha) )
